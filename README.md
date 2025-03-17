@@ -15,10 +15,19 @@ If everything is correct, then this message will appear in the output window:
 <br>
 Once the data of the mesh has been stored in a cfg, you need to put the player character on one of the faces of the mesh in the start(this can be done manually with MeshDataTool by guesssing the mesh face, or by using a raycast). Once you have the face index of the starting face, use the WalkOnSortedSurface class to place the player characters 3D model on that face, rest of the code is regarding player input and using the WalkOnSortedSurface class to move the player on the desired surface. The WalkOnSortedSurface class provides a framework to take in player input to decide the direction in which the player can move, once initialzed, the player can move in eight directions depending on input, namely front, right, left, back, front-right, front-left, back-right, & back-left. The code for movement can be called repeatedly in the _process() function in the main script:
 <br>
+Code needed to initialize the WalkOnSortedSurface class (the location provided is the location of the cfg file generated in the first step):
+<img src="/CodeSnippets/Globals.png">
+<br>
+The MainScale variable ensures that if the walking surface is scaled then the player movement is correct, MovableChar, DebugCube and HelperFunctions class is just something i used for debugging, you don't need to put them in you code if you don't want to.
+<br>
 Code to put player on the starting face in the beginning:
 <img src="/CodeSnippets/_ready.png">
 <br>
 Code to call in the process() function for player input and character movement on desired surface:
 <img src="/CodeSnippets/_process.png" > 
 <br>
-In the above code, MultiplayerMap is the meshinstance3d node containing the desired walking surface mesh, PlayerBasisRef is the reference node to be used for making the player movement smooth via lerping, and 1208 is the index of the starting face in the 3D model(if you are confused about the mesh and face index stuff, read about the <a href="https://docs.godotengine.org/en/stable/classes/class_meshdatatool.html">MeshDataTool</a> class in the godot 4.2.1 documentation)
+In the above code, MultiplayerMap is the meshinstance3d node containing the desired walking surface mesh, PlayerBasisRef is the reference node to be used for making the player movement smooth via lerping, and 1208 is the index of the starting face in the 3D model(if you are confused about the mesh and face index stuff, read about the <a href="https://docs.godotengine.org/en/stable/classes/class_meshdatatool.html">MeshDataTool</a> class in the godot 4.2.1 documentation). 
+<br>
+<h1>Final Output</h1>
+<h1>How it works</h1>
+<h1>Resources</h1>
