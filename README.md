@@ -12,3 +12,11 @@ Code to "scan" the mesh(icosphere is the walking surface mesh):
 <br>
 If everything is correct, then this message will appear in the output window:
 <img src="/CodeSnippets/OutputMessage.png">
+<br>
+Once the data of the mesh has been stored in a cfg, you need to put the player character on one of the faces of the mesh in the start(this can be done manually with MeshDataTool by guesssing the mesh face, or by using a raycast). Once you have the face index of the starting face, use the WalkOnSortedSurface class to place the player characters 3D model on that face, rest of the code is regarding player input and using the WalkOnSortedSurface class to move the player on the desired surface. The WalkOnSortedSurface class provides a framework to take in player input to decide the direction in which the player can move, once initialzed, the player can move in eight directions depending on input, namely front, right, left, back, front-right, front-left, back-right, & back-left. The code for movement can be called repeatedly in the _process() function in the main script:
+<br>
+Code to put player on the starting face in the beginning:
+<img src="/CodeSnippets/_ready.png">
+<br>
+Code to call in the process() function for player input and character movement on desired surface:
+<img src="/CodeSnippets/_process.png" > 
