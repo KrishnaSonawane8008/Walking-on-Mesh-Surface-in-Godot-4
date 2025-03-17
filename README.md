@@ -20,3 +20,5 @@ Code to put player on the starting face in the beginning:
 <br>
 Code to call in the process() function for player input and character movement on desired surface:
 <img src="/CodeSnippets/_process.png" > 
+<br>
+In the above code, MultiplayerMap is the meshinstance3d node containing the desired walking surface mesh, PlayerBasisRef is the reference node to be used for making the player movement smooth via lerping, and 1208 is the index of the starting face in the 3D model(if you are confused about the mesh and face index stuff, read about the <a href="https://docs.godotengine.org/en/stable/classes/class_meshdatatool.html">MeshDataTool</a> class in the godot 4.2.1 documentation)
