@@ -77,4 +77,4 @@ If you make the walking surface invisible, and increase the distance of the next
 <br>
 <h1>Resources</h1>
 <li>Where I got the idea from :- https://www.youtube.com/watch?v=rvxS-6sazCw </li>
-<li>The Godot Documentation is a big help :- https://docs.godotengine.org/en/stable/index.html</li>
+<li>Godot 4 Documentation :- https://docs.godotengine.org/en/stable/index.html</li>
