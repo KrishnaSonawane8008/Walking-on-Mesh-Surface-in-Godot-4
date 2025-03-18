@@ -42,5 +42,6 @@ Once everything is setup and you didn't get any errors while "scaning" the mesh,
 1st person view:
 <video src="https://github.com/user-attachments/assets/1be7194d-0522-41c0-af4a-9afb16968212"></video>
 <br>
+As you can see, my player character is a Red Bean(sigma character design) and the desired surface to be walked on is an <a href="https://threejs.org/docs/scenes/geometry-browser.html#IcosahedronGeometry">Icosphere</a> 
 <h1>How it works</h1>
 <h1>Resources</h1>
