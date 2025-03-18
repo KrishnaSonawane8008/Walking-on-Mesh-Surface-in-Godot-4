@@ -38,10 +38,24 @@ Once everything is setup and you didn't get any errors while "scaning" the mesh,
 <br>
 3rd person view:
 <video src="https://github.com/user-attachments/assets/079ac130-108e-4083-a6f8-5d4f476ae97e"></video>
+3rd person view with the same walking surface but the visibility of walking surface mesh turned off:
+
 <br>
 1st person view:
 <video src="https://github.com/user-attachments/assets/1be7194d-0522-41c0-af4a-9afb16968212"></video>
 <br>
-As you can see, my player character is a Red Bean(sigma character design) and the desired surface to be walked on is an <a href="https://threejs.org/docs/scenes/geometry-browser.html#IcosahedronGeometry">Icosphere</a> 
-<h1>How it works</h1>
+As you can see, my player character is a Red Bean(sigma character design) and the desired surface to be walked on is an <a href="https://threejs.org/docs/scenes/geometry-browser.html#IcosahedronGeometry">Icosphere</a>, the red tracks left behind is the path taken by the player character when traversing the icosphere surface.
+<h1>How the algorithm works</h1>
+As stated before the first step is putting the player character on a face of the mesh, in case of 3d models imported into Godot 4, every face is a triangle, so you are bascially putting your player character on a given mesh triangle in the beginning, the depending on the direction you want your player to move, a plane parallel to that direction is created, Now when you scanned the mesh in the beginning, the data about traingles(mesh faces) was stored in the cfg. The data is in the form of a dictionary in which each key is the index of a face and each value is am array of size 3 containing another array of size 2 in which the first entry is the index of the traingle adjacent to an edge and the second entry is the index of the edge to which the corresponding triangle is adjacent to. This data is needed to figure out the 3 adjacent triangles to a certain face(also a triangle) of the walking surface.
+<br>
+<br>
+Once the player character is on a face, the main algorithm can begin, you need to supply the WalkOnSortedSurface class with the reference node, a MeshDataTool class instance, the face which the player is currently on, the string name of the direction in which the player wishes to move, and the distance  by which the player is to move, starting from the current location, giving you the info about the next point and the path to be travelled. Then you cal pass all that info to the  WalkOnSortedSurface class again to get the final travelling location along with the new player <a href="https://docs.godotengine.org/en/stable/classes/class_basis.html">Basis</a>. This can be run in a loop so that player input can dictate how the player moves on the walking surface.
+<br>
+<br>
+<h3>Working Principle</h3>
+After putting the player on a face the direction plane(plane parallel to a direction) is used to see if any of the edges of the current triangle are intersecting the plane, the edge intersecting the plane is taken as the current edge and the face adjacent to that edge is then checked for intersections with the same plane, this is continued till the path formed by the intersections is as long as required.
+<br>
+<br>
+You can see how
+
 <h1>Resources</h1>
