@@ -51,12 +51,15 @@ As stated before the first step is putting the player character on a face of the
 <br>
 Once the player character is on a face, the main algorithm can begin, you need to supply the WalkOnSortedSurface class with the reference node, a MeshDataTool class instance, the face which the player is currently on, the string name of the direction in which the player wishes to move, and the distance  by which the player is to move, starting from the current location, giving you the info about the next point and the path to be travelled. Then you cal pass all that info to the  WalkOnSortedSurface class again to get the final travelling location along with the new player <a href="https://docs.godotengine.org/en/stable/classes/class_basis.html">Basis</a>. This can be run in a loop so that player input can dictate how the player moves on the walking surface.
 <br>
-<br>
 <h3>Working Principle</h3>
 After putting the player on a face the direction plane(plane parallel to a direction) is used to see if any of the edges of the current triangle are intersecting the plane, the edge intersecting the plane is taken as the current edge and the face adjacent to that edge is then checked for intersections with the same plane, this is continued till the path formed by the intersections is as long as required.
 <br>
 <br>
 You can see how the intersection of the triangle's edges with the direction plane(plane parallel to a direction) is used to trace the path in that direction, you can see how each consecutive triangle is checked in all of the 8 directions:
 <video src="https://github.com/user-attachments/assets/5f859e4d-02c6-4f2c-b8bc-b3e64aada321"></video>
+<br>
+Once the player starts moving, you can see how the player moves on the surface, sort of scanning each face:
+
+<br>
 
 <h1>Resources</h1>
