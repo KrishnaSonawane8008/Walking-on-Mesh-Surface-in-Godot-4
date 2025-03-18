@@ -185,7 +185,7 @@ transform = Transform3D(0.1, 2.26647e-05, 1.86265e-08, -5.9302e-07, 3.82, 9.4063
 mesh = SubResource("BoxMesh_lr67x")
 
 [node name="CollisionPt" type="MeshInstance3D" parent="RayCast3D"]
-transform = Transform3D(0.2, 9.68855e-06, -2.78279e-06, -9.6974e-06, 0.2, 3.86313e-06, 2.81259e-06, -4.06802e-06, 0.2, -1.90735e-06, -3.82, 0)
+transform = Transform3D(0.2, 9.66433e-06, -2.81259e-06, -9.6974e-06, 0.2, 4.06802e-06, 2.81259e-06, -4.61191e-06, 0.2, -1.90735e-06, -3.82, 0)
 mesh = SubResource("BoxMesh_ktqsu")
 
 [node name="MultiplayerMap" type="MeshInstance3D" parent="."]

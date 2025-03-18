@@ -72,6 +72,9 @@ You can replace the walking mesh with any other mesh by going through the proced
 <h3>Some quirks of the project</h3>
 If you stop going to a new point on the path and instead just stay in one place while tracing the path every frame, then if you keep on rotating while doing so, the traced paths form a circle:
 <video src="https://github.com/user-attachments/assets/8c08a986-37e5-464a-bea9-4b0b86068c91"></video>
-If you make the walking surface invisible, and increase the distance of the next location by a lot(like 10 units) while continuing to trace the path, then it seems like a ball of string is being spun:
-
+If you make the walking surface invisible, and increase the distance of the next location by a lot(like 30 units) while continuing to trace the path, then it seems like a ball of string is being spun:
+<video src="https://github.com/user-attachments/assets/922122af-8bb8-41e5-9274-b8ecbc4c1df6"></video>
+<br>
 <h1>Resources</h1>
+<li>Where I got the idea from :- https://www.youtube.com/watch?v=rvxS-6sazCw </li>
+<li>The Godot Documentation is a big help :- https://docs.godotengine.org/en/stable/index.html</li>
