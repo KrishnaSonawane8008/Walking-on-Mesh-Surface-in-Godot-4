@@ -71,6 +71,6 @@ You can replace the walking mesh with any other mesh by going through the proced
 <li><b>If you want to move on another player character or on a mesh that constantly being deformed(like in an animation), like in the game <a href="https://www.youtube.com/watch?v=ZvEztNhGdOM">Shadow of The Colossus</a>, then you cannot use this method even if the above  limitations are solved. Because in an animated mesh(animated using a skeleton) the triangles are deformed according to an algorithm called a skinning algorithm, Godot however, does not provide us with the deformed locations of vertices produces by its skinning algorithm. However, i have another project which gives you access to the skinned positions of the vertices, but its not that optimized, so you can somehow make it work but you will have to make a lot of adjustments but if you are smart, then you can figure it out, Good Luck!</b></li>
 <h3>Some quirks of the project</h3>
 If you stop going to a new point on the path and instead just stay in one place while tracing the path every frame, then if you keep on rotating while doing so, the traced paths form a circle:
-
+<video src="https://github.com/user-attachments/assets/8c08a986-37e5-464a-bea9-4b0b86068c91"></video>
 
 <h1>Resources</h1>
