@@ -62,5 +62,5 @@ You can see how the player moves on the surface, sort of scanning each face:
 <video src="https://github.com/user-attachments/assets/c26e5c9d-6f7d-40eb-b3f9-16ffc17c8d53"></video>
 <br>
 You can replace the walking mesh with any other mesh by going through the procedure mentioned above:
-
+<video src="https://github.com/user-attachments/assets/65fa957b-25ea-48bb-a172-6b2a10bd5e5f"></video>
 <h1>Resources</h1>
