@@ -33,5 +33,14 @@ Code to call in the process() function for player input and character movement o
 In the above code, MultiplayerMap is the meshinstance3d node containing the desired walking surface mesh, PlayerBasisRef is the reference node to be used for making the player movement smooth via lerping, and 1208 is the index of the starting face in the 3D model(if you are confused about the mesh and face index stuff, read about the <a href="https://docs.godotengine.org/en/stable/classes/class_meshdatatool.html">MeshDataTool</a> class in the godot 4.2.1 documentation). 
 <br>
 <h1>Final Output</h1>
+Once everything is setup and you didn't get any errors while "scaning" the mesh, then you should be able to see your player character move freely on the desired surface like this:
+<br>
+<br>
+3rd person view:
+
+
+
+
+
 <h1>How it works</h1>
 <h1>Resources</h1>
