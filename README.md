@@ -39,7 +39,7 @@ Once everything is setup and you didn't get any errors while "scaning" the mesh,
 3rd person view:
 <video src="https://github.com/user-attachments/assets/079ac130-108e-4083-a6f8-5d4f476ae97e"></video>
 3rd person view with the same walking surface but the visibility of walking surface mesh turned off:
-
+<video src="https://github.com/user-attachments/assets/404b8a87-99a6-4ac9-b3e2-a6472f25a38e"></video>
 <br>
 1st person view:
 <video src="https://github.com/user-attachments/assets/1be7194d-0522-41c0-af4a-9afb16968212"></video>
