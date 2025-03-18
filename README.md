@@ -59,7 +59,7 @@ You can see how the intersection of the triangle's edges with the direction plan
 <video src="https://github.com/user-attachments/assets/5f859e4d-02c6-4f2c-b8bc-b3e64aada321"></video>
 <br>
 Once the player starts moving, you can see how the player moves on the surface, sort of scanning each face:
-
+<video src="https://github.com/user-attachments/assets/c26e5c9d-6f7d-40eb-b3f9-16ffc17c8d53"></video>
 <br>
 
 <h1>Resources</h1>
