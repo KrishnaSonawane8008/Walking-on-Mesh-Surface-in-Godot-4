@@ -46,6 +46,8 @@ Once everything is setup and you didn't get any errors while "scaning" the mesh,
 <br>
 As you can see, my player character is a Red Bean(sigma character design) and the desired surface to be walked on is an <a href="https://threejs.org/docs/scenes/geometry-browser.html#IcosahedronGeometry">Icosphere</a>, the red tracks left behind is the path taken by the player character when traversing the icosphere surface.
 <h1>How the algorithm works</h1>
+Watch <a href="https://www.youtube.com/watch?v=rvxS-6sazCw">THIS</a> video by <a href="https://www.youtube.com/@RobertThomsonDev">Robert Thomson</a> before reading.
+<br>
 As stated before the first step is putting the player character on a face of the mesh, in case of 3d models imported into Godot 4, every face is a triangle, so you are bascially putting your player character on a given mesh triangle in the beginning, the depending on the direction you want your player to move, a plane parallel to that direction is created, Now when you scanned the mesh in the beginning, the data about traingles(mesh faces) was stored in the cfg. The data is in the form of a dictionary in which each key is the index of a face and each value is am array of size 3 containing another array of size 2 in which the first entry is the index of the traingle adjacent to an edge and the second entry is the index of the edge to which the corresponding triangle is adjacent to. This data is needed to figure out the 3 adjacent triangles to a certain face(also a triangle) of the walking surface.
 <br>
 <br>
