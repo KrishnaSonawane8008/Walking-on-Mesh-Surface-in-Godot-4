@@ -56,7 +56,7 @@ Once the player character is on a face, the main algorithm can begin, you need t
 After putting the player on a face the direction plane(plane parallel to a direction) is used to see if any of the edges of the current triangle are intersecting the plane, the edge intersecting the plane is taken as the current edge and the face adjacent to that edge is then checked for intersections with the same plane, this is continued till the path formed by the intersections is as long as required.
 <br>
 <br>
-You can see how the intersection of the triangle's edges with the direction plane(plane parallel to a direction) is used to trace the path in that direction:
-
+You can see how the intersection of the triangle's edges with the direction plane(plane parallel to a direction) is used to trace the path in that direction, you can see how each consecutive triangle is checked in all of the 8 directions:
+<video src="https://github.com/user-attachments/assets/5f859e4d-02c6-4f2c-b8bc-b3e64aada321"></video>
 
 <h1>Resources</h1>
