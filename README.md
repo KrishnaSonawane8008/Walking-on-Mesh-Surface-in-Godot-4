@@ -63,4 +63,6 @@ You can see how the player moves on the surface, sort of scanning each face:
 <br>
 You can replace the walking mesh with any other mesh by going through the procedure mentioned above:
 <video src="https://github.com/user-attachments/assets/65fa957b-25ea-48bb-a172-6b2a10bd5e5f"></video>
+<h3>Some dont's if you are using this method for your projects</h3>
+<li><b>The walking surface should not be translated from its original position, that is, the world space coordinates of the walking surface should be (0.0, 0.0, 0.0)</b></li>
 <h1>Resources</h1>
