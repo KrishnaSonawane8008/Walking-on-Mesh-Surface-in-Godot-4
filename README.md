@@ -65,4 +65,6 @@ You can replace the walking mesh with any other mesh by going through the proced
 <video src="https://github.com/user-attachments/assets/65fa957b-25ea-48bb-a172-6b2a10bd5e5f"></video>
 <h3>Some dont's if you are using this method for your projects</h3>
 <li><b>The walking surface should not be translated from its original position, that is, the world space coordinates of the walking surface should be (0.0, 0.0, 0.0)</b></li>
+<li><b>The walking surface should not be rotated in a new orientation, that is, the world space rotation of the walking surface mesh should be 0 degrees for all axes</b></li>
+(The above two limitations might be changed if i decided to update the project in the future.)
 <h1>Resources</h1>
