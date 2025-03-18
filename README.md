@@ -37,10 +37,10 @@ Once everything is setup and you didn't get any errors while "scaning" the mesh,
 <br>
 <br>
 3rd person view:
-
-
-
-
-
+<video src="https://github.com/user-attachments/assets/079ac130-108e-4083-a6f8-5d4f476ae97e"></video>
+<br>
+1st person view:
+<video src="https://github.com/user-attachments/assets/1be7194d-0522-41c0-af4a-9afb16968212"></video>
+<br>
 <h1>How it works</h1>
 <h1>Resources</h1>
